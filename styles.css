@@ -87,12 +87,22 @@ a {
   color: var(--ink);
 }
 
+.nav-pills {
+  display: flex;
+  gap: 10px;
+}
+
 .pill {
   border: 1.5px solid var(--ink);
   padding: 8px 18px;
   border-radius: 999px;
   font-weight: 600;
   background: var(--panel);
+  transition: transform 0.2s ease;
+}
+
+.pill:hover {
+  transform: translateY(-2px);
 }
 
 .hero-content {
@@ -279,6 +289,13 @@ h1 {
 .footer p {
   color: var(--muted);
   max-width: 620px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .reveal {
